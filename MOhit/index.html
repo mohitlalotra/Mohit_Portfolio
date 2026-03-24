@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohit Lalotra | Digital Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <!-- Background Elements -->
+    <div class="bg-gradient"></div>
+    <div class="noise-overlay"></div>
+
+    <header>
+      <nav>
+        <div class="logo">ML</div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education & Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="hero">
+        <div class="container hero-content">
+          <div class="hero-text hidden">
+            <h2 class="greeting">Hi, I'm</h2>
+            <h1 class="name">Mohit Lalotra</h1>
+            <h3 class="title">Computer Science & Engineering Student</h3>
+            <p class="description">
+              Passionate about software development, Full-Stack technologies, and algorithmic problem-solving. Available for hire!
+            </p>
+            <div class="contact-links">
+              <a href="https://www.linkedin.com/in/mohit-lalotra29" target="_blank" class="contact-btn linkedin-btn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+              <a href="https://github.com/mohitlalotra" target="_blank" class="contact-btn github-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="mailto:mohitlalotra744@gmail.com" class="contact-btn email-btn"><i class="fa-solid fa-envelope"></i> Email Me</a>
+            </div>
+          </div>
+          <div class="hero-image-container hidden-delay">
+            <!-- This is the requested photo placeholder -->
+            <div id="profile-photo" class="photo-placeholder">
+              <span id="placeholder-text" class="placeholder-text" style="display: none;">Save your image as <br> profile.jpg <br> in public/ folder</span>
+              <img src="/profile.jpg" alt="Mohit Lalotra" class="profile-img" onerror="this.style.display='none'; document.getElementById('placeholder-text').style.display='block';">
+            </div>
+            <div class="glow-effect"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <div class="container">
+          <h2 class="section-title hidden">About Me</h2>
+          <div class="about-content glass-card hidden-delay">
+            <p>
+              I am a driven and passionate <strong>3rd-year B.Tech undergraduate in Computer Science and Engineering</strong> at <strong>Lovely Professional University</strong>. My academic journey has instilled in me a strong foundation in core software engineering principles, data structures, and algorithmic problem-solving.
+            </p>
+            <p>
+              I thrive on building efficient, scalable, and user-centric web applications. Whether it's crafting intuitive front-end interfaces or developing robust back-end systems, I am dedicated to continuously expanding my technical skill set. I am always eager to tackle new challenges, collaborate with innovative teams, and contribute to impactful tech projects.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills-section">
+        <div class="container">
+          <h2 class="section-title hidden">My Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-category glass-card hidden">
+              <h3>Programming Languages</h3>
+              <div class="skill-tags">
+                <span class="tag">C++</span>
+                <span class="tag">C</span>
+                <span class="tag">Java</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">PHP</span>
+              </div>
+            </div>
+            <div class="skill-category glass-card hidden-delay">
+              <h3>Tools & Platforms</h3>
+              <div class="skill-tags">
+                <span class="tag">MySQL</span>
+                <span class="tag">Visual Studio Code</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+              </div>
+            </div>
+            <div class="skill-category glass-card hidden-delay-2">
+              <h3>Soft Skills</h3>
+              <div class="skill-tags">
+                <span class="tag">Team Work</span>
+                <span class="tag">Time Management</span>
+                <span class="tag">Problem Solving</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects-section">
+        <div class="container">
+          <h2 class="section-title hidden">Featured Projects</h2>
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card glass-card hidden">
+              <div class="project-content">
+                <span class="project-date">Jan 2025 - Apr 2025</span>
+                <h3>Real-Time Order Tracking</h3>
+                <p>Developed a full-stack web application displaying status clearly, reducing manual tracking efforts. Integrated direct email support functionality for end-users.</p>
+                <div class="tech-stack">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">PHP</span>
+                </div>
+                <a href="#" class="project-link">View Project →</a>
+              </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card glass-card hidden-delay">
+              <div class="project-content">
+                <span class="project-date">Jun 2025 - Jul 2025</span>
+                <h3>Student Mark Analyser</h3>
+                <p>Built a robust C++ program for managing student marks. Calculated averages, handled sorted subject-wise marks, and demonstrated strong OOP & file handling principles.</p>
+                <div class="tech-stack">
+                  <span class="tech-tag">C++</span>
+                </div>
+                <a href="#" class="project-link">View Project →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Training & Certificates combined -->
+      <section id="education" class="edu-section">
+        <div class="container">
+          <div class="split-layout">
+            
+            <div class="split-col">
+              <h2 class="section-title hidden">Training & Certificates</h2>
+              <div class="timeline">
+                
+                <div class="timeline-item hidden">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content glass-card">
+                    <span class="date">Jun 2025 - Jul 2025</span>
+                    <h3>Fundamentals of Data Structures using C++</h3>
+                    <h4>Lovely Professional University</h4>
+                    <p>Gained a strong foundation in core data structures like arrays, linked lists, stacks, queues, and trees.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-item hidden">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content glass-card">
+                    <span class="date">Oct 2025</span>
+                    <h3>Industry 4.0 and Internet of Things</h3>
+                    <h4>NPTEL</h4>
+                    <p>Introduction to connected architectures and modern automation systems.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-item hidden">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content glass-card">
+                    <span class="date">Feb 2024</span>
+                    <h3>C Programming for Beginners</h3>
+                    <h4>Udemy</h4>
+                    <p>Mastered the core concepts of the C language including pointers and memory allocation.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="split-col">
+              <h2 class="section-title hidden">Education</h2>
+              <div class="timeline">
+                
+                <div class="timeline-item hidden">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content glass-card">
+                    <span class="date">Aug 2023 - Present</span>
+                    <h3>Bachelor of Technology - CSE</h3>
+                    <h4>Lovely Professional University (Phagwara)</h4>
+                    <p>CGPA: 7.51</p>
+                  </div>
+                </div>
+
+                <div class="timeline-item hidden">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content glass-card">
+                    <span class="date">Apr 2021 - Mar 2023</span>
+                    <h3>Intermediate (12th Grade)</h3>
+                    <h4>Himalaya Modern Sr. Secondary School (Gurdaspur)</h4>
+                    <p>Percentage: 85.6%</p>
+                  </div>
+                </div>
+
+                <div class="timeline-item hidden">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content glass-card">
+                    <span class="date">Apr 2020 - Mar 2021</span>
+                    <h3>Matriculation (10th Grade)</h3>
+                    <h4>Lotus International School (Dinanagar)</h4>
+                    <p>Percentage: 70.8%</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <h2 class="section-title hidden">Get In Touch</h2>
+          <div class="contact-grid">
+            <div class="contact-info glass-card hidden">
+              <h3>Contact Information</h3>
+              <p>Feel free to reach out for collaborations, job opportunities, or just a friendly hello!</p>
+              <ul class="contact-details">
+                <li><i class="fa-solid fa-phone" style="color: var(--accent-color);"></i> <strong>Mobile:</strong> <a href="tel:+916284359063">+91-6284359063</a></li>
+                <li><i class="fa-solid fa-envelope" style="color: var(--accent-color);"></i> <strong>Email:</strong> <a href="mailto:mohitlalotra744@gmail.com">mohitlalotra744@gmail.com</a></li>
+                <li><i class="fa-brands fa-linkedin" style="color: var(--accent-color);"></i> <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mohit-lalotra29" target="_blank">mohit-lalotra29</a></li>
+                <li><i class="fa-brands fa-github" style="color: var(--accent-color);"></i> <strong>GitHub:</strong> <a href="https://github.com/mohitlalotra" target="_blank">mohitlalotra</a></li>
+              </ul>
+            </div>
+            <div class="contact-form glass-card hidden-delay">
+              <h3>Send a Message</h3>
+              <form>
+                <div class="form-group">
+                  <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                  <textarea rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn contact-btn">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Mohit Lalotra. Digital Portfolio. <br> +91-6284359063 | <a href="mailto:mohitlalotra744@gmail.com">mohitlalotra744@gmail.com</a></p>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
